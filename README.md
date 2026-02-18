@@ -60,8 +60,8 @@ Customer-Churn-Prediction/
 
 ## 📌 Installation & Local Setup
 Clone the repository:
-
-git clone https://github.com/RaffayBaig/Customer-Churn-Prediction.git
+```bash
+git clone https://github.com/your-username/Customer-Churn-Prediction.git
 cd Customer-Churn-Prediction
 
 Install dependencies:
@@ -69,6 +69,6 @@ pip install -r requirements.txt
 
 Run the application:
 streamlit run app.py
-
-👤 Author
+```
+##👤 Author
 Mirza Abdul Raffay Baig Computer Science (AI) | Data Analysis & Machine Learning
