@@ -72,8 +72,8 @@ Run the application:
 
 streamlit run app.py
 
-##
-👤 Author
+
+## 👤 Author
 
 Mirza Abdul Raffay Baig
 Computer Science (AI) | Data Analysis & Machine Learning
