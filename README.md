@@ -1,88 +1,18 @@
-# 📊 Customer Churn Prediction System
+📊 Customer Churn Prediction System
+An end-to-end Machine Learning solution designed to identify high-risk customers likely to discontinue service. This project transforms raw historical data into actionable business intelligence through a deployable web interface.
 
-A complete Machine Learning project that predicts whether a customer is likely to churn based on historical data.  
-The project covers the **end-to-end ML workflow**: data preprocessing, model training, evaluation, and deployment readiness.
+🚀 Key Features
+Automated Pipeline: Clean, encode, and scale data with a unified preprocessing pipeline.
 
----
-## 🚀 Project Overview
+Real-time Inference: Interactive Streamlit dashboard for instant churn probability.
 
-Customer churn is a critical business problem where companies aim to identify customers who are likely to stop using their services.  
-This project uses supervised machine learning techniques to predict churn and help businesses take proactive retention actions.
+Reproducible Research: Documented EDA and model selection process in Jupyter Notebooks.
 
----
+Scalable Storage: Large model files managed via Git LFS (Large File Storage).
 
-## 🧠 Machine Learning Approach
-- **Problem Type:** Binary Classification  
-- **Target Variable:** Customer Churn (Yes / No)
-- **Models Used:** Classical Machine Learning Models  
-- **Evaluation Metrics:** Accuracy, Precision, Recall, F1-Score
-
----
-## 🗂️ Project Structure
-Customer-Churn-Prediction/
-│
-├── Dataset/ # Raw and processed datasets
-├── notebooks/ # EDA and model training notebooks
-├── model/
-│ ├── final_model.pkl # Trained ML model (Git LFS)
-│ └── preprocessor.pkl # Data preprocessing pipeline (Git LFS)
-│
-├── src/ # Source code (training, utilities)
-├── app.py # Streamlit application
-├── requirements.txt # Project dependencies
-└── README.md # Project documentation
-
-
----
-
-## 🔄 Data Preprocessing
-
-- Handling missing values  
-- Encoding categorical variables  
-- Feature scaling  
-- Pipeline-based preprocessing for consistency  
-
-The preprocessing logic is saved separately to ensure **reproducible predictions**.
-
----
-
-## 📈 Model Training & Evaluation
-
-- Multiple models were trained and evaluated
-- Final model selected based on performance metrics
-- The trained model and preprocessing pipeline are saved using `pickle/joblib`
-
----
-
-## 🖥️ Web Application (Streamlit)
-
-A simple and interactive **Streamlit web app** allows users to:
-- Input customer details
-- Get real-time churn predictions
-- Visualize prediction outcomes
-
----
-
-## 🛠️ Technologies Used
-
-- **Programming Language:** Python  
-- **Libraries:** NumPy, Pandas, Scikit-learn  
-- **Model Serialization:** Pickle / Joblib  
-- **Web Framework:** Streamlit  
-- **Version Control:** Git, Git LFS  
-
----
-
-## 📌 How to Run the Project Locally
-
-```bash
-git clone https://github.com/your-username/Customer-Churn-Prediction.git
-cd Customer-Churn-Prediction
-pip install -r requirements.txt
-streamlit run app.py
-
-                                                                                                                           👤 Author
-
-                                                                                                                       Mirza Abdul Raffay Baig
-                                                                                                   Computer Science (AI) | Data Analysis & Machine Learning
-
+📈 Model Performance & Evaluation
+I evaluated three distinct models to understand the trade-offs between precision and recall. Depending on the business objective (e.g., minimizing false alarms vs. capturing every potential churner), different models offer unique advantages.
+Model,Precision,Recall,F1 Score,Accuracy,Best Use Case
+Logistic Regression,0.63,0.54,0.58,0.79,High Explainability
+Decision Tree,0.53,0.77,0.63,0.76,Balanced Recall
+Random Forest,0.46,0.81,0.59,0.70,Maximum Churn Capture
