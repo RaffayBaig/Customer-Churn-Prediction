@@ -35,4 +35,45 @@ Depending on business objectives (e.g., minimizing false positives vs. capturing
 ---
 
 ## 🗂️ Project Structure
+Customer-Churn-Prediction/
+├── Dataset/             # Raw and processed CSV files
+├── notebooks/           # Exploratory Data Analysis (EDA) & Model Training
+├── model/
+│   ├── final_model.pkl  # Trained classifier (Git LFS)
+│   └── preprocessor.pkl # Preprocessing pipeline (Git LFS)
+├── src/                 # Modular Python scripts for training/utils
+├── app.py               # Streamlit UI 
+├── requirements.txt     # Dependency list
+└── README.md            # Project documentation
 
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Python 3.x  
+- **Data Processing & ML:** Pandas, NumPy, Scikit-learn  
+- **Web Framework:** Streamlit  
+- **Serialization:** Pickle, Joblib  
+- **Version Control:** Git, Git LFS  
+
+---
+
+## 📌 Installation & Local Setup
+
+Clone the repository:
+```bash
+git clone https://github.com/your-username/Customer-Churn-Prediction.git
+cd Customer-Churn-Prediction
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the application:
+
+streamlit run app.py
+
+##
+👤 Author
+
+Mirza Abdul Raffay Baig
+Computer Science (AI) | Data Analysis & Machine Learning
