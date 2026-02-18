@@ -36,15 +36,16 @@ Depending on business objectives (e.g., minimizing false positives vs. capturing
 
 ## 🗂️ Project Structure
 Customer-Churn-Prediction/
-├── Dataset/             # Raw and processed CSV files
-├── notebooks/           # Exploratory Data Analysis (EDA) & Model Training
+│
+├── Dataset/ # Raw and processed datasets
+├── notebooks/ # EDA and model training notebooks
 ├── model/
-│   ├── final_model.pkl  # Trained classifier (Git LFS)
-│   └── preprocessor.pkl # Preprocessing pipeline (Git LFS)
-├── src/                 # Modular Python scripts for training/utils
-├── app.py               # Streamlit UI 
-├── requirements.txt     # Dependency list
-└── README.md            # Project documentation
+│ ├── final_model.pkl # Trained classifier (Git LFS)
+│ └── preprocessor.pkl # Preprocessing pipeline (Git LFS)
+├── src/ # Modular Python scripts
+├── app.py # Streamlit web application
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
 
 ---
 
